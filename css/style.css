@@ -64,6 +64,24 @@ a:active, a:focus,input:active, input:focus{outline:0;}
   margin-left: -640px;
 }
 
+.brand{
+	position: relative;
+}
+
+.panel-brand{
+	width: 150%;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding: 0px;
+	text-align: left;
+	color: #333; /* 文字色 */
+	background: #fff; /* 背景色 */
+	list-style-type:none;
+	display:none; 
+	z-index: 10;
+}
+
 
 /* フッター
 ------------------------------------------------------------*/

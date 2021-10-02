@@ -1,19 +1,7 @@
-let switchBtn = document.getElementsByTagName('button')[0];
-//表示・非表示を切り替える要素を取得
-let box = document.getElementById('panel-brand');
+document.getElementById("brand").addEventListener("mouseover", function(){
+	document.getElementById("panel-brand").style.display = 'block';
+}, false);
 
-//styleのdisplayを変更する関数
-let changeElement = (el)=> {
-
-  if(el.style.display==''){
-    el.style.display='none';
-  }else{
-    el.style.display='';
-  }
-
-}
-
-//上記関数をボタンクリック時に実行
-switchBtn.addEventListener('click', ()=> {
-  changeElement(box);
+document.getElementById("brand").addEventListener("mouseout", function(){
+	document.getElementById("panel-brand").style.display = 'none';
 }, false);
